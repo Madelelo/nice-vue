@@ -2,14 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Vue.js App</title>
+
   </head>
 
   <body>
-    <div id="app">
+    <div id="header">
         {{ message }}
     </div>
 
+
+    <div id="movie">
+      <table>
+        <tr>
+        <!-- Now we provide each todo-item with the todo object    -->
+        <!-- it's representing, so that its content can be dynamic -->
+        <movie-item v-for="movie in movieList" v-bind:mov="movie"></movie-item>
+      </tr>
+    </div>
 
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="script.js"></script>

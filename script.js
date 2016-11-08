@@ -1,6 +1,26 @@
 var app = new Vue({
-  el: '#app',
+  el: '#header',
   data: {
-    message: 'Hello Vue!'
+    message: 'Awesome movie app in Vue.js'
+  }
+})
+
+
+Vue.component('movie-item', {
+  // The todo-item component now accepts a
+  // "prop", which is like a custom attribute.
+  // This prop is called todo.
+  props: ['mov'],
+  template: '<td>{{ mov.text }}</td>'
+})
+
+var app7 = new Vue({
+  el: '#movie',
+  data: {
+    movieList: [    //TODO: add json here
+      { text: 'StarWars' },
+      { text: 'DeadPool' },
+      { text: 'The Big Short' }
+    ]
   }
 })
