@@ -12,8 +12,17 @@
         {{ message }}
     </div>
 
+    <div id="input">
+      <br> <hr> <br>
+      <p> Is this 2-way-data binding?? </p>
+      <input v-model="msg" placeholder="text">
+      <p>Message is: {{ msg }}</p>
+    </div>
+
 
     <div id="movie">
+      <br> <hr> <br>
+      <h2> Movie-app-demo </h2>
       <table>
         <tr>
         <!-- Now we provide each todo-item with the todo object    -->

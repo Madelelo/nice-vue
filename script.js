@@ -5,6 +5,14 @@ var app = new Vue({
   }
 })
 
+var app = new Vue({
+  el: '#input',
+  data: {
+    msg: ''
+  }
+})
+
+
 
 Vue.component('movie-item', {
   // The todo-item component now accepts a
