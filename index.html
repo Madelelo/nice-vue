@@ -4,36 +4,26 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Vue.js App</title>
-
   </head>
 
   <body>
-    <div id="header">
-        {{ message }}
+    <div id="demo">
+      <h1>Latest Vue.js Commits</h1>
+      <!-- <ul>
+        <li v-for="record in commits">
+          <a :href="record.html_url" target="_blank" class="commit">{{ record.sha.slice(0, 7) }}</a>
+          - <span class="message">{{ record.commit.message | truncate }}</span><br>
+          by <span class="author"><a :href="record.author.html_url" target="_blank">{{ record.commit.author.name }}</a></span>
+          at <span class="date">{{ record.commit.author.date | formatDate }}</span>
+        </li>
+      </ul> -->
+      <li v-for="record in commits">
+        {{ record.title }}
+      </li>
     </div>
 
-    <div id="input">
-      <br> <hr> <br>
-      <p> Is this 2-way-data binding?? </p>
-      <input v-model="msg" placeholder="text">
-      <p>Message is: {{ msg }}</p>
-    </div>
-
-
-    <div id="movie">
-      <br> <hr> <br>
-      <h2> Movie-app-demo </h2>
-      <table>
-        <tr>
-        <!-- Now we provide each todo-item with the todo object    -->
-        <!-- it's representing, so that its content can be dynamic -->
-        <movie-item v-for="movie in movieList" v-bind:mov="movie"></movie-item>
-      </tr>
-    </div>
-
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="script.js"></script>
-
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+    <script src="app.js"></script>
   </body>
-
 </html>

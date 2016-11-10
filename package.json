@@ -1,0 +1,33 @@
+{
+  "name": "nice-vue",
+  "version": "1.0.0",
+  "main": "script.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0",
+    "vue": "^2.0.5",
+    "vue-resource": "^1.0.3"
+  },
+  "devDependencies": {
+    "foreman": "^2.0.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madelelo/nice-vue.git"
+  },
+  "keywords": [],
+  "author": "Kshitij Aranke <kshitij.aranke@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Madelelo/nice-vue/issues"
+  },
+  "homepage": "https://github.com/Madelelo/nice-vue#readme",
+  "description": ""
+}
